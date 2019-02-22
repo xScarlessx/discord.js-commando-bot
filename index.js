@@ -4,8 +4,8 @@ const path = require('path')
 
 const client = new Client({
     commandPrefix: '!',
-    owner: '256883010970976257',
-    invite: 'https://discord.gg/Zbf66b',
+    owner: 'your id', // can be an array of ids like: owner: ["id", "id"]
+    invite: 'your discord server',
 })
 
 
@@ -29,4 +29,4 @@ client.once('ready', () => {
 client.on('error', console.error)
 
 
-client.login('NTQ4NTA5NzQwNzg3ODI2Njg5.D1Gr5w.fzoCyuFh5x7LvFj-XZSKTcr_UHk')
+client.login('your discord token')

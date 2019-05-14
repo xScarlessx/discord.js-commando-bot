@@ -1,6 +1,10 @@
-const { Client } = require('discord.js-commando')
-const path = require('path')
-
+const { Client } = require('discord.js-commando');
+const path = require('path');
+require('dotenv/config');
+const http = require('http');
+const port = process.env.port || 3000;
+const token = process.env.TOKEN;
+http.createServer().listen(port);
 
 const client = new Client({
     commandPrefix: '!',

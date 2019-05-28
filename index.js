@@ -17,7 +17,7 @@ function haschannel(obj1, channelthing) {
 
   
 
-const client = new Discord.Client();
+
 
  
 const config = require("./config.json");

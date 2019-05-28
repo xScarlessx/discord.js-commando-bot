@@ -1,10 +1,27 @@
 const { Client } = require('discord.js-commando');
-const path = require('path');
 require('dotenv/config');
 const http = require('http');
 const port = process.env.port || 3000;
 const token = process.env.TOKEN;
 http.createServer().listen(port);
+
+function haschannel(obj1, channelthing) {
+  if (obj1.guild.channels.find(channel => channel.name === channelthing)) {
+    return true
+  }
+  else {
+    return false
+  }
+}
+
+
+  
+
+const client = new Discord.Client();
+
+ 
+const config = require("./config.json");
+
 
 const client = new Client({
     commandPrefix: '!',
